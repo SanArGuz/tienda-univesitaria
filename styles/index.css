@@ -1,19 +1,86 @@
 @import url('globals.css');
 
-:root {
-  --light-color: #F1F3F5;
-  --black-color: #111111;
-  --dark-color: #282828;
-  --gray-color: #787878;
-  --red-color: #CE2323;
-  --green-color: #23CE6B;
-
-  --primary-font: ;
-  --secundary-font: ;
-
-  
+body{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
 
-body{
-  background-color: var(--light-color);
+header{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3vh;
+  border-bottom: 1px solid white;
+}
+
+header div {
+  display: flex;
+}
+
+header div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 80px;
+  padding: 5px;
+}
+
+header nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+main{
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section {
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main a {
+  width: 30vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: var(--shadow);
+  transition: width 400ms, height 400ms;
+}
+
+main a:hover{
+  width: 32vh;
+  height: 32vh;
+}
+
+main a img {
+  height: 80%;
+}
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vh;
+  border-top: 1px solid #ffffff;
 }

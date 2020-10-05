@@ -1,0 +1,42 @@
+body {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  height: 100vh;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  padding: 8vw;
+  background-color: var(--light-color);
+  justify-content: center;
+}
+
+article a{
+  color: var(--gray-color);
+}
+
+article .Button{
+  display: flex;
+  color: white;
+  background-color: var(--green-color);
+  width: fit-content;
+  padding: 8px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 10 px
+}
+
+section{
+  display: flex;
+}
+
+section img{
+  height: 100%;
+  object-fit: scale-down;
+}
+
+article .Button:hover{
+  opacity: 0.6;
+}
