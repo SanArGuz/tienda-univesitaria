@@ -1,0 +1,19 @@
+@import url('globals.css');
+
+:root {
+  --light-color: #F1F3F5;
+  --black-color: #111111;
+  --dark-color: #282828;
+  --gray-color: #787878;
+  --red-color: #CE2323;
+  --green-color: #23CE6B;
+
+  --primary-font: ;
+  --secundary-font: ;
+
+  
+}
+
+body{
+  background-color: var(--light-color);
+}
